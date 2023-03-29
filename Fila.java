@@ -29,3 +29,19 @@ public class Fila {
 
     }
 }
+
+
+//MAIN
+
+public class Main {
+    public static void main(String[] args) {
+
+        Fila fila1 = Fila.getInstance();
+
+        fila1.setImpressora("XP");
+        fila1.setFolhas(15);
+
+        System.out.println(fila1.getImpressora());
+        System.out.println(fila1.getFolhas());
+    }
+}
