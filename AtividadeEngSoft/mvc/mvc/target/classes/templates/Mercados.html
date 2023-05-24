@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Lista de Mercados</h1>
+<hr>
+
+<table>
+  <thead>
+  <tr>
+    <th> Endereço </th>
+    <th> Nome </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="mercado:${mercado}">
+    <td th:text="${mercado.endereco}">Endereço</td>
+    <td th:text="${mercado.nome}">Nome</td>
+  </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
